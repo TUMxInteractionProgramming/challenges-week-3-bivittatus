@@ -13,7 +13,7 @@
     padding: 0;
 }
 
-/* overall layout / split screen */
+/* split screen layout */
 /* channels area, left aligned, full screen height, 40% width */
 #channels {
     position: absolute;
@@ -44,10 +44,26 @@ button, strong {
 
 /* #4 #sweat address both #app-bar s */
 h1 {
+    position: relative;
     background-color: #3F51B5;
     color: white;
+    box-sizing: border-box;
+    height: 64px;
+    padding: 16px;
+    line-height: 32px;
+    font-size: 20px;
+    font-weight: lighter;
 }
 
+h1 img {
+    position: absolute;
+    bottom: 0;
+}
+
+#app-name {
+    position: absolute;
+    left: 72px;
+}
 
 /* CHANNELS LIST */
 
