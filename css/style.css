@@ -13,6 +13,22 @@
     padding: 0;
 }
 
+/* overall layout / split screen */
+/* channels area, left aligned, full screen height, 40% width */
+#channels {
+    position: absolute;
+    left: 0px;
+    height: 100%;
+    width: 40%;
+}
+/* chat area, right aligned, full screen height, 60% width */
+#chat {
+    position: absolute;
+    right: 0px;
+    height: 100%;
+    width: 60%;
+}
+
 body {
     background-color: #F5F5F5;
 }
