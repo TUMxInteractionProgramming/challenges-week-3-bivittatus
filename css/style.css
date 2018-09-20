@@ -109,6 +109,11 @@ li img {
     vertical-align: middle;
 }
 
+.channel-meta {
+    position: absolute;
+    right: 0px;
+}
+
 /* TAB BAR */
 
 /* #4 #sweat #tab-bar */
@@ -172,6 +177,11 @@ li img {
 
 
 .message h3 {
+    /* metadata */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
     font-size: medium;
 }
 
