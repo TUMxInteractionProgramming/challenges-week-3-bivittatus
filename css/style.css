@@ -114,23 +114,32 @@ li img {
     right: 0px;
 }
 
-/* TAB BAR */
+/* TAB BAR & CHAT BAR STYLES*/
 
 /* #4 #sweat #tab-bar */
-#tab-bar {
+#tab-bar, #chat-bar {
     /* positioning for tab bar */
     position: fixed;
     bottom: 0px;
-    width: 40%;
+    height: 72px;
 
     /* flex box */
     display: flex;
-    justify-content: space-around;
 
     /* #3 #tab-bar #container should be white */
     background-color: white;
     /* #3 #tab-bar #container has all buttons centered */
     text-align: center;
+}
+
+#tab-bar {
+    width: 40%;
+    justify-content: space-around;
+}
+
+#chat-bar {
+    width: 60%;
+    align-items: flex-start;
 }
 
 /* #4 add styles to #tab-bar #buttons */
@@ -156,7 +165,32 @@ li img {
     color: #3F51B5;
     border-bottom: 4px solid #3F51B5;
 }
+#chat-bar button {
+    background-color: white;
+    border: none;
+    padding: 16px;
+    height: 72px;
+}
+#chat-bar button img {
+    display: block;
+}
 
+/* Emoji box */
+#emojis {
+    background-color: white;
+    font-size: 28px;
+    text-align: left;
+    overflow: auto;
+    border: 1px solid #000000;
+    padding: 16px;
+
+    position: absolute;
+    left: 16px;
+    bottom: 60px;
+    
+    width: 300px;
+    height: 300px;
+}
 
 /* MESSAGES */
 /* #4 select #specific #messages by class and re-assign element styles according to their #hierarchy in a nested way */
