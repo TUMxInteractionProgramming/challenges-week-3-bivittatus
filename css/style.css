@@ -50,16 +50,23 @@ h1 {
     line-height: 32px;
     font-size: 20px;
     font-weight: lighter;
+
+    position: fixed;
+    top: 0px;
+    z-index: 1;
 }
 
 /* positioning for the left app bar */
 #channels h1 {
-    position: fixed;
-    top: 0;
-    z-index: 1;
     width: 40%;
 }
 
+/* positioning for the right app bar */
+#chat h1 {
+    width: 60%;
+}
+
+/* interiors left bar */
 h1 img {
     position: absolute;
     bottom: 0;
@@ -73,9 +80,8 @@ h1 img {
 /* CHANNELS LIST */
 
 /* positioning for the channel list */
-#channels ul {
+#channels ul, #message-area {
     position: fixed;
-    width: 40%;
     top: 64px;
     bottom: 72px;
     overflow-y: auto;
@@ -83,6 +89,7 @@ h1 img {
 
 /* #4 #sweat #channels */
 ul {
+    width: 40%;
     /* #3 #channels #list modifies h2 to ul */
     background-color: white;
     /* #3 #channels #bullets removed */
@@ -193,6 +200,10 @@ li img {
 }
 
 /* MESSAGES */
+
+#message-area {
+    width: 60%;
+}
 /* #4 select #specific #messages by class and re-assign element styles according to their #hierarchy in a nested way */
 .message {
     /*positioning messages*/
@@ -208,7 +219,6 @@ li img {
     /* #4 #message distance to next message container*/
     margin-bottom: 8px;
 }
-
 
 .message h3 {
     /* metadata */
