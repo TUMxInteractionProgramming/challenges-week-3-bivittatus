@@ -74,8 +74,8 @@ h1 img {
 
 /* positioning for the channel list */
 #channels ul {
-    position: absolute;
-    width: 100%;
+    position: fixed;
+    width: 40%;
     top: 64px;
     bottom: 72px;
     overflow-y: auto;
