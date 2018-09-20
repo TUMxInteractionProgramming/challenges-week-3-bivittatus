@@ -11,6 +11,16 @@
      /* #4 #sweat take care of #spacing between various elements */
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+/* #4 # sweat #uppercase buttons and w3w locations */
+button, strong {
+    text-transform: uppercase;
 }
 
 /* split screen layout */
@@ -29,30 +39,25 @@
     width: 60%;
 }
 
-body {
-    background-color: #F5F5F5;
-}
-
-/* #4 # sweat #uppercase buttons and w3w locations */
-button, strong {
-    text-transform: uppercase;
-}
-
-
-
 /* APP BAR */
 
 /* #4 #sweat address both #app-bar s */
 h1 {
-    position: relative;
     background-color: #3F51B5;
     color: white;
-    box-sizing: border-box;
     height: 64px;
     padding: 16px;
     line-height: 32px;
     font-size: 20px;
     font-weight: lighter;
+}
+
+/* positioning for the left app bar */
+#channels h1 {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 40%;
 }
 
 h1 img {
@@ -67,6 +72,15 @@ h1 img {
 
 /* CHANNELS LIST */
 
+/* positioning for the channel list */
+#channels ul {
+    position: absolute;
+    width: 100%;
+    top: 64px;
+    bottom: 72px;
+    overflow-y: auto;
+}
+
 /* #4 #sweat #channels */
 ul {
     /* #3 #channels #list modifies h2 to ul */
@@ -77,7 +91,6 @@ ul {
 
 li {
     /* #4 #channel #tile geometry */
-    box-sizing: border-box;
     height: 48px;
     padding: 16px;
     font-size: 16px;
@@ -100,6 +113,15 @@ li img {
 
 /* #4 #sweat #tab-bar */
 #tab-bar {
+    /* positioning for tab bar */
+    position: fixed;
+    bottom: 0px;
+    width: 40%;
+
+    /* flex box */
+    display: flex;
+    justify-content: space-around;
+
     /* #3 #tab-bar #container should be white */
     background-color: white;
     /* #3 #tab-bar #container has all buttons centered */
@@ -134,6 +156,10 @@ li img {
 /* MESSAGES */
 /* #4 select #specific #messages by class and re-assign element styles according to their #hierarchy in a nested way */
 .message {
+    /*positioning messages*/
+    /* set to relative so buttons have a parent element they can base themselves off of*/
+    position: relative;
+
     /* #3 #chat #width*/
     width: 80%;
 
@@ -165,6 +191,11 @@ li img {
 }
 
 .message button {
+    /* positioning of +5 buttons*/
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+
     background-color: #CDDC39;
     color: black;
     text-transform: uppercase;
