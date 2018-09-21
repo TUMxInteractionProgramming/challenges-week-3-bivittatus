@@ -66,6 +66,12 @@ h1 {
     width: 60%;
 }
 
+/* color for location link in right app bar */
+#location-app-bar-right {
+    color: white;
+    text-transform: uppercase;
+}
+
 /* interiors left bar */
 h1 img {
     position: absolute;
