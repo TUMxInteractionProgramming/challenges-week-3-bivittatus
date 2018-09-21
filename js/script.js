@@ -13,3 +13,7 @@ function fillStar() {
     $("#app-bar-star").attr('src', 'http://ip.lfe.mw.tum.de/sections/star.png');
     $("#app-bar-star").attr('alt', 'alt="starred');
 }
+
+function selectTab() {
+    
+}
