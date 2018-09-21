@@ -61,6 +61,17 @@ h1 {
     width: 40%;
 }
 
+/* interiors left app bar */
+#channels h1 img {
+    position: absolute;
+    bottom: 0;
+}
+
+#app-name {
+    position: absolute;
+    left: 72px;
+}
+
 /* positioning for the right app bar */
 #chat h1 {
     width: 60%;
@@ -72,16 +83,12 @@ h1 {
     text-transform: uppercase;
 }
 
-/* interiors left bar */
-h1 img {
+#chat h1 img {
     position: absolute;
-    bottom: 0;
+    right: 16px;
 }
 
-#app-name {
-    position: absolute;
-    left: 72px;
-}
+
 
 /* CHANNELS LIST */
 
