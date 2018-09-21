@@ -24,7 +24,7 @@
 
     <!-- #3 #channels #list is much better, than headlines or paragraphs... -->
     <ul>
-        <li onclick="switchChannel('#Yummy');">#Yummy
+        <li onclick="switchChannel('#Yummy'); emptyStar();">#Yummy
             <span class="channel-meta">
                 <!-- #3 #channels #favorite this is not starred -->
                 <img src="http://ip.lfe.mw.tum.de/sections/star-o.png" alt="not starred">
@@ -33,7 +33,7 @@
         </li>
 
         <!-- #4 #channel is #highlighted -->
-        <li class="selected" onclick="switchChannel('#SevenContinents');">
+        <li class="selected" onclick="switchChannel('#SevenContinents'); emptyStar();">
             #SevenContinents
             <span class="channel-meta">
                 <!-- #3 #channels #favorite this is starred -->
@@ -41,21 +41,21 @@
                  <img src="http://ip.lfe.mw.tum.de/sections/chevron-right.png" alt="chevron right">
             </span>
         </li>
-        <li onclick="switchChannel('#KillerApp');">#KillerApp
+        <li onclick="switchChannel('#KillerApp'); emptyStar();">#KillerApp
             <span class="channel-meta">
                 <!-- #3 #channels #favorite this is not starred -->
                 <img src="http://ip.lfe.mw.tum.de/sections/star-o.png" alt="not starred">
                 <img src="http://ip.lfe.mw.tum.de/sections/chevron-right.png" alt="chevron right">
             </span>
         </li>
-        <li onclick="switchChannel('#FirstPersonOnMars');">#FirstPersonOnMars
+        <li onclick="switchChannel('#FirstPersonOnMars'); emptyStar();">#FirstPersonOnMars
             <span class="channel-meta">
                 <!-- #3 #channels #favorite this is starred -->
                 <img src="http://ip.lfe.mw.tum.de/sections/star.png" alt="starred">
                 <img src="http://ip.lfe.mw.tum.de/sections/chevron-right.png" alt="chevron right">
             </span>
         </li>
-        <li onclick="switchChannel('#Octoberfest');">#Octoberfest
+        <li onclick="switchChannel('#Octoberfest'); emptyStar();">#Octoberfest
             <span class="channel-meta">
                 <!-- #3 #channels #favorite this is not starred -->
                 <img src="http://ip.lfe.mw.tum.de/sections/star-o.png" alt="not starred">
@@ -95,7 +95,7 @@
                 <strong>cheeses.yard.applies</strong>
             </a>
         </small>
-        <img src="http://ip.lfe.mw.tum.de/sections/star.png" alt="starred">
+        <img src="http://ip.lfe.mw.tum.de/sections/star.png" alt="starred" id="app-bar-star" onclick="fillStar();">
     </h1>
 
     <div id="message-area">
